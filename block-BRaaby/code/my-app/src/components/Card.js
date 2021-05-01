@@ -17,9 +17,16 @@ class Card extends React.Component {
     console.log(this.state.data);
     return (
       <div className="card">
-        {/* <img src={this.state.data.picture.large} alt="" /> */}
-        <p>{this.state.data.cell}</p>
-        <h3>{this.state.data.name}</h3>
+        {/* <img src={} /> */}
+        <p>My name is</p>
+        <div className="card-details">
+          <i className="fas fa-user"></i>
+          <i className="fas fa-envelope-open"></i>
+          <i className="fas fa-address-card"></i>
+          <i className="fas fa-phone-alt"></i>
+          <i className="fas fa-unlock"></i>
+        </div>
+        <button>Random user</button>
       </div>
     );
   }
