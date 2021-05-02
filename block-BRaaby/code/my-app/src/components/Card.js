@@ -4,7 +4,7 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: '',
+      data: [],
     };
   }
 
@@ -14,11 +14,15 @@ class Card extends React.Component {
       .then((data) => this.setState({ data: data.results }));
   }
   render() {
-    console.log(this.state.data);
+    console.log(this.state.data[0]);
+    console.log(this.state.data[0].email, 'emaill');
     return (
       <div className="card">
         {/* <img src={} /> */}
-        <p>My name is</p>
+        <p>
+          My name is
+          {/* {this.state.data && this.state.data.email} */}
+        </p>
         <div className="card-details">
           <i className="fas fa-user"></i>
           <i className="fas fa-envelope-open"></i>
